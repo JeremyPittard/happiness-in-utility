@@ -1,0 +1,126 @@
+@mixin vertical-gradient($top, $bottom) {
+  background: $top;
+  background: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $top),
+    color-stop(100%, $bottom)
+  );
+  background: -webkit-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -o-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -ms-linear-gradient(top, $top 0%, $bottom 100%);
+  background: linear-gradient(top, $top 0%, $bottom 100%);
+}
+
+@mixin horizontal-gradient($top, $bottom) {
+  background: $top;
+  background: -moz-linear-gradient(left, $top 0%, $bottom 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, $top),
+    color-stop(100%, $bottom)
+  );
+  background: -webkit-linear-gradient(left, $top 0%, $bottom 100%);
+  background: -o-linear-gradient(left, $top 0%, $bottom 100%);
+  background: -ms-linear-gradient(left, $top 0%, $bottom 100%);
+  background: linear-gradient(left, $top 0%, $bottom 100%);
+}
+
+@mixin radial-gradient($outer, $inner, $type: circle) {
+  background: $outer;
+  background: -moz-radial-gradient(center, $type cover, $inner 0%, $outer 100%);
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, $inner),
+    color-stop(100%, $outer)
+  );
+  background: -webkit-radial-gradient(
+    center,
+    $type cover,
+    $inner 0%,
+    $outer 100%
+  );
+  background: -o-radial-gradient(center, $type cover, $inner 0%, $outer 100%);
+  background: -ms-radial-gradient(center, $type cover, $inner 0%, $outer 100%);
+  background: radial-gradient(center, $type cover, $inner 0%, $outer 100%);
+}
+
+@mixin light-bg-text-color($color) {
+  section.has-light-background {
+    &,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color;
+    }
+  }
+}
+
+@mixin dark-bg-text-color($color) {
+  section.has-dark-background {
+    &,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color;
+    }
+  }
+}
+
+@mixin generate-colours {
+  @each $name, $color in $colors {
+    .bg-#{$name} {
+      background: $color !important;
+    }
+
+    .text-#{$name} {
+      color: $color !important;
+    }
+
+    .border-#{$name} {
+      border: 1px solid $color;
+    }
+  }
+}
+
+$spacing-base: 4px;
+
+
+@mixin generate-spacing {
+  @for $size from 0 through 10 {
+    .m-#{$size} {
+      margin: #{$spacing-base * $size};
+    }
+    .m-x-#{$size} {
+      margin-left: #{$spacing-base * $size};
+      margin-right: #{$spacing-base * $size};
+    }
+    .m-y-#{$size} {
+      margin-top: #{$spacing-base * $size};
+      margin-bottom: #{$spacing-base * $size};
+    }
+
+    .px-#{$size} {
+      padding-left: #{$spacing-base * $size};
+      padding-right: #{$spacing-base * $size};
+    }
+    .py-#{$size} {
+      padding-top: #{$spacing-base * $size};
+      padding-bottom: #{$spacing-base * $size};
+    }
+  }
+}

@@ -1,0 +1,10 @@
+Design Systems are great. Pre-built components allow you to scale out new features quickly while remaining on brand. 
+Building design systems on the other hand can be a giant pain, especially when it needs to be utilised by a large team 
+across multiple frameworks. Normally this would require a complex folder structure for your design tokens, complicated 
+mixins and default styles. It can take a lot of time to get it right, and once it is, it’s fragile and messy.
+
+Tailwind, a utility-first CSS framework, Takes seconds to scaffold with no messy folder structure and (at times) painful 
+naming conventions. You enter your design tokens and you’re ready to start styling your components.
+
+Let’s look at how Tailwind can save you time when scaling out your design system. As well as how it bulletproofs your design 
+and code with its utility-first approach.
