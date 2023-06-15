@@ -5,7 +5,7 @@
 $backgroundColor: #2b2b2b;
 
 // Primary/body text
-$mainFont: 'Lato', sans-serif;
+$mainFont: "Lato", sans-serif;
 $mainFontSize: 40px;
 $mainColor: #eee;
 
@@ -14,7 +14,7 @@ $blockMargin: 20px;
 
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
-$headingFont: 'League Gothic', Impact, sans-serif;
+$headingFont: "League Gothic", Impact, sans-serif;
 $headingColor: #eee;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
@@ -26,48 +26,45 @@ $heading1TextShadow: $headingTextShadow;
 $heading1Size: 3.77em;
 $heading2Size: 2.11em;
 $heading3Size: 1.55em;
-$heading4Size: 1.00em;
+$heading4Size: 1em;
 
 $codeFont: monospace;
 
 // Links and actions
-$linkColor: #13DAEC;
-$linkColorHover: lighten( $linkColor, 20% );
+$linkColor: #13daec;
+$linkColorHover: lighten($linkColor, 20%);
 
 // Text selection
-$selectionBackgroundColor: #FF5E99;
+$selectionBackgroundColor: #ff5e99;
 $selectionColor: #fff;
 
 ////   colours
-$gondola: #1B0F12;
-$alto: #D3D3D3;
-$neon-blue:#00E0E0;
-$neon-blue-900:#003838;
-$neon-green:#38F689;
-$neon-green-900:#034A22;
-$neon-pink: #FF00FF;
-$neon-pink-900: #1F001F;
+$gondola: #1b0f12;
+$alto: #d3d3d3;
+$neon-blue: #00e0e0;
+$neon-blue-900: #003838;
+$neon-green: #38f689;
+$neon-green-900: #034a22;
+$neon-pink: #ff00ff;
+$neon-pink-900: #1f001f;
 
 ////   fonts
-$atkinson: 'Atkinson Hyperlegible';
-$lexend: 'Lexend';
-
+$atkinson: "Atkinson Hyperlegible";
+$lexend: "Lexend";
 
 $colors: (
-	gondola: $gondola,
-	alto: $alto,
-	neon-blue: $neon-blue,
-	neon-blue-900: $neon-blue-900,
-	neon-green: $neon-green,
-	neon-green-900: $neon-green-900,
-	neon-pink: $neon-pink,
-	neon-pink-900: $neon-pink-900,
+  gondola: $gondola,
+  alto: $alto,
+  neon-blue: $neon-blue,
+  neon-blue-900: $neon-blue-900,
+  neon-green: $neon-green,
+  neon-green-900: $neon-green-900,
+  neon-pink: $neon-pink,
+  neon-pink-900: $neon-pink-900,
 );
-
 
 // Generates the presentation background, can be overridden
 // to return a background image or gradient
 @mixin bodyBackground() {
-	background: $backgroundColor;
+  background: $backgroundColor;
 }
-

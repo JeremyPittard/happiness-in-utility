@@ -187,7 +187,8 @@ html * {
   margin-left: 40px;
 }
 
-.reveal blockquote {
+.reveal blockquote,
+figcaption {
   display: block;
   position: relative;
   width: 70%;
