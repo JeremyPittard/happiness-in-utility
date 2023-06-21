@@ -20,14 +20,14 @@
   <body class="bg-gondola">
     <div class="reveal">
       <div class="slides">
-        <section>
+        <section >
           <h1 class="py-3 px-4">Happiness in Utility:</h1>
           <p class="bg-neon-pink text-neon-pink-900 py-3 px-4">
             Harnessing the power of Tailwind to quickly build Design Systems
           </p>
           <aside class="notes">acknowledgement of country</aside>
         </section>
-        <section>
+        <section >
           <figure>
             <blockquote
               cite="https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/"
@@ -46,7 +46,7 @@
             </figcaption>
           </figure>
         </section>
-        <section data-transition="slide-in 1-out">
+        <section data-transition="fade-in">
           <h2>ITCSS</h2>
           <img
             data-fragment-index="0"
@@ -54,13 +54,13 @@
             alt="itcss img"
           />
         </section>
-        <section data-transition="slide-out 1-in">
+        <section data-transition="none">
           <img data-src="./dist/img/filetree.png" alt="itcss img" />
         </section>
-        <section>
+        <section >
           <img class="" data-src="./dist/img/filetree.png" alt="itcss img" />
         </section>
-        <section>
+        <section >
           <figure>
             <blockquote
               cite="https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/"
@@ -74,21 +74,21 @@
             <figcaption class="py-3 px-4 bg-gondola">- some person</figcaption>
           </figure>
         </section>
-        <section><h2>complicated set up, fragile when scaling</h2></section>
-        <section><h1>Introducing Tailwind</h1></section>
-        <section>
+        <section ><h2>complicated set up, fragile when scaling</h2></section>
+        <section ><h1>Introducing Tailwind</h1></section>
+        <section >
           <h2>what is utility first</h2>
         </section>
-        <section>
+        <section >
           <h2>tailwind sets up quickly</h2>
         </section>
-        <section>
+        <section >
           <h2>constrained by design tokens so scales nicely</h2>
         </section>
-        <section>
+        <section >
           <h2>Tailwind <strong>IS</strong>a design system</h2>
         </section>
-        <section>
+        <section >
           <h1>fin.</h1>
         </section>
       </div>
@@ -103,6 +103,7 @@
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
       Reveal.initialize({
+        transition: 'fade-in',
         hash: true,
         progress: false,
         controls: false,
