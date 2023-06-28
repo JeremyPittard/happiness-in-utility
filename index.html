@@ -7,7 +7,10 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>reveal.js</title>
+    <title>
+      Happiness In Utility: Harnessing the power of Tailwind to quickly build
+      Design Systems
+    </title>
 
     <link rel="stylesheet" href="dist/tw.css" />
     <link rel="stylesheet" href="dist/reset.css" />
@@ -20,14 +23,14 @@
   <body class="bg-gondola">
     <div class="reveal">
       <div class="slides">
-        <section >
+        <section>
           <h1 class="py-3 px-4">Happiness in Utility:</h1>
           <p class="bg-neon-pink text-neon-pink-900 py-3 px-4">
             Harnessing the power of Tailwind to quickly build Design Systems
           </p>
           <aside class="notes">acknowledgement of country</aside>
         </section>
-        <section >
+        <section>
           <figure>
             <blockquote
               cite="https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/"
@@ -40,41 +43,66 @@
                 for a product design company.
               </p>
             </blockquote>
-
             <figcaption class="py-3 px-4 bg-gondola">
               - Elizabeth Alli, DesignerUp
             </figcaption>
+            <aside class="notes">
+              I found this from Elizabeth Alli at Designerup. In a nutshell, a
+              design system is a collection of documents, articles, examples,
+              code snippets, screenshots, design guidelines, components,
+              philosophies and other digital assets for a product design
+              company. for our purposes today, we will be discussing a design
+              system exlusively in terms of design tokens and component
+              libraries.
+            </aside>
           </figure>
         </section>
+
         <section data-transition="fade-in">
           <h2>ITCSS</h2>
-          <img
-            data-fragment-index="0"
-            data-src="./dist/img/itcss.png"
-            alt="itcss img"
-          />
+          <img data-src="./dist/img/itcss.png" alt="itcss img" />
+          <aside class="notes">
+            Traditionally we would try to build this with something like a
+            combination of ITCSS and the BEM naming convention. If we look at
+            the diagram on the screen, the idea behind ITCSS is you organise
+            your classes into these 7 categories, and the further down the
+            triangle you get, the more specific the classes are. <br />
+            ending up with something like...
+          </aside>
         </section>
         <section data-transition="none">
-          <img data-src="./dist/img/filetree.png" alt="itcss img" />
+          <img
+            data-src="./dist/img/filetree.png"
+            alt="filetree img"
+            class="mx-auto"
+            style="height: 70vh"
+          />
+          <aside class="notes">
+            this.<br />
+            Which is highly effective for small teams efficient with css and who
+            are also familiar with this sort of file structure. **however** it
+            is extremely time consuming. You need to set up your
+            variables/design tokens, your folder structure, then break it down
+            granually and set up appropriate css/scss imports. Then the real
+            challenge, maintiainging it. Preventing it from becoming Spaghetti
+            code, writing the documentation and keeping it up to date.
+          </aside>
         </section>
-        <section >
-          <img class="" data-src="./dist/img/filetree.png" alt="itcss img" />
+        <section class="fragile">
+          <img class="mx-auto" src="./dist/img/blocks-wrecked.gif" alt="" />
+          <aside class="notes">
+            its also fragile, as your system grows and your team changes you
+            gather tech debt, it's invevitable, the adding things here and there
+            to meet a deadline with every intention to clean it up later.
+          </aside>
         </section>
-        <section ><h2>complicated set up, fragile when scaling</h2></section>
-        <section ><h1>Introducing Tailwind</h1></section>
-        <section >
-          <h2>what is utility first</h2>
+        <section>
+          <aside class="notes">
+            What if we could just plug your design tokens into a config, and voila! ready to go?
+Enter, Tailwind.
+          </aside>
         </section>
-        <section >
-          <h2>tailwind sets up quickly</h2>
-        </section>
-        <section >
-          <h2>constrained by design tokens so scales nicely</h2>
-        </section>
-        <section >
-          <h2>Tailwind <strong>IS</strong>a design system</h2>
-        </section>
-        <section >
+        <section>
           <h1>fin.</h1>
         </section>
       </div>
@@ -89,7 +117,7 @@
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
       Reveal.initialize({
-        transition: 'fade-in',
+        transition: "fade-in",
         hash: true,
         progress: false,
         controls: false,
