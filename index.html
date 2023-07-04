@@ -200,7 +200,7 @@
             from
             <ul>
               <li>Why don't you just use inline styles?</li>
-              <li>It's ugly</li>
+              <li>It's ugly/hard to read</li>
               <li>Maintainability/It's not DRY</li>
             </ul>
           </aside>
@@ -1213,7 +1213,22 @@
         </section>
         <section>
           <h2>Sneak Peak at the design system</h2>
-          <img src="./dist/img/ccds.png" class="mx-auto" alt="sneak peak of design sys">
+          <img
+            src="./dist/img/ccds.png"
+            class="mx-auto"
+            alt="sneak peak of design sys"
+          />
+          <asdie class="notes">
+            hers a sneak peak at the design system we were given.
+            <ul>
+              <li>
+                you can see the colours we have from brand, to neutrals to
+                accent (erros, success, warning, info)
+              </li>
+              <li>the fonts and sizes</li>
+              <li>the animations, icons and some low level components</li>
+            </ul>
+          </asdie>
         </section>
         <section>
           <h2>Our config file</h2>
@@ -1237,6 +1252,7 @@
                     success: "#068b14",
                     warning: "#EE8811",
                     error: "#F6470F",
+                    yellow-bright: "#FFC019"
                   },
                   fontFamily: {
                     display: ["Baloo Paaji 2 Variable"],
@@ -1263,10 +1279,93 @@
               };
             </code>
           </pre>
+          <aside class="notes">
+            and here is our config file based on the design system, you can see
+            here we are overiding the colors, fonts and font size utilities. and
+            then at the bottom we are extending it to add spacing of 4.5rem
+            there seems to be a bit of that used across our application and the
+            default tailwind spacing does not go that high
+          </aside>
         </section>
         <section>
-          <h1>tooling</h1>
+          <h1>Lets build a component</h1>
+          <div class="r-stack">
+            <pre class="fragment">
+              <code>
+        <button>
+          I'm a Button!
+        </button>
+              </code>
+            </pre>
+            <pre class="fragment">
+              <code>
+        <button class="bg-yellow">
+          I'm a Button!
+        </button>
+              </code>
+            </pre>
+            <pre class="fragment">
+              <code>
+        <button class="bg-yellow text-black">
+          I'm a Button!
+        </button>
+              </code>
+            </pre>
+            <pre class="fragment">
+              <code>
+        <button class="bg-yellow text-black px-6">
+          I'm a Button!
+        </button>
+              </code>
+            </pre>
+            <pre class="fragment">
+              <code>
+        <button class="bg-yellow text-black px-6 py-3 active:bg-yellow-bright">
+          I'm a Button!
+        </button>
+              </code>
+            </pre>
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>first we have a button</li>
+              <li>now we change it's background colour</li>
+              <li>
+                and now we set it's text colour (this can be done globally also)
+              </li>
+              <li>now 24px of horizontal padding</li>
+              <li>and 12px of vertical padding</li>
+              <li>
+                and finally the pressed state of the button (there is no hover
+                state as this was built for the moble app and you can't hover on
+                mobile)
+              </li>
+              <li>
+                so you can see this active modifier, this is how we would handle
+                responsiveness and othing things like hover
+              </li>
+            </ul>
+          </aside>
         </section>
+        <section>
+          <h1>Tailwind Intellsense</h1>
+          <img
+            src="./dist/img/intellisense.png"
+            class="mx-auto"
+            alt="intellisense"
+          />
+          <aside class="notes">intellisense notes</aside>
+        </section>
+        <section>
+          <h1>Tailwind Prettier Plugin</h1>
+          <img
+            src="./dist/img/intellisense.png"
+            class="mx-auto"
+            alt="intellisense"
+          />
+          <aside class="notes">intellisense notes</aside>
+        </section>
+
         <section>
           <img src="./dist/img/magik.png" class="mx-auto" alt="" />
           <aside class="notes">
