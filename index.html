@@ -63,10 +63,12 @@
           <img data-src="./dist/img/itcss.png" alt="itcss img" />
           <aside class="notes">
             Traditionally we would try to build this with something like a
-            combination of ITCSS and the BEM naming convention. If we look at
-            the diagram on the screen, the idea behind ITCSS is you organise
-            your classes into these 7 categories, and the further down the
-            triangle you get, the more specific the classes are. <br />
+            combination of ITCSS and the BEM naming convention. You have
+            probably seen BEM in the wild, an element with a class like
+            card__large <br />
+            If we look at the diagram on the screen, the idea behind ITCSS is
+            you organise your classes into these 7 categories, and the further
+            down the triangle you get, the more specific the classes are. <br />
             ending up with something like...
           </aside>
         </section>
@@ -84,7 +86,7 @@
             is extremely time consuming. You need to set up your
             variables/design tokens, your folder structure, then break it down
             granually and set up appropriate css/scss imports. Then the real
-            challenge, maintiainging it. Preventing it from becoming Spaghetti
+            challenge, maintiaining it. Preventing it from becoming Spaghetti
             code, writing the documentation and keeping it up to date.
           </aside>
         </section>
@@ -1218,7 +1220,7 @@
             class="mx-auto"
             alt="sneak peak of design sys"
           />
-          <asdie class="notes">
+          <aside class="notes">
             hers a sneak peak at the design system we were given.
             <ul>
               <li>
@@ -1228,7 +1230,7 @@
               <li>the fonts and sizes</li>
               <li>the animations, icons and some low level components</li>
             </ul>
-          </asdie>
+          </aside>
         </section>
         <section>
           <h2>Our config file</h2>
@@ -1320,6 +1322,13 @@
             </pre>
             <pre class="fragment">
               <code>
+        <button class="bg-yellow text-black px-6 py-3">
+          I'm a Button!
+        </button>
+              </code>
+            </pre>
+            <pre class="fragment">
+              <code>
         <button class="bg-yellow text-black px-6 py-3 active:bg-yellow-bright">
           I'm a Button!
         </button>
@@ -1337,8 +1346,8 @@
               <li>and 12px of vertical padding</li>
               <li>
                 and finally the pressed state of the button (there is no hover
-                state as this was built for the moble app and you can't hover on
-                mobile)
+                state as this was built for the mobile app and you can't hover
+                on mobile)
               </li>
               <li>
                 so you can see this active modifier, this is how we would handle
@@ -1359,7 +1368,7 @@
         <section>
           <h1>Tailwind Prettier Plugin</h1>
           <img
-            src="./dist/img/intellisense.png"
+            src="./dist/img/Code_zVlss6vVGe.gif"
             class="mx-auto"
             alt="intellisense"
           />
